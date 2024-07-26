@@ -8,13 +8,46 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .column {
-            margin-bottom: 20px;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        nav img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .projects {
+            max-width: 800px;
+            margin: 0 auto;
         }
         .project-title {
-            font-size: 24px;
+            font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 10px;
+            display: block;
         }
         .technologies {
             font-style: italic;
@@ -31,6 +64,43 @@
             width: 100%;
             border-top: 1px solid #ccc;
             margin: 20px 0;
+        }
+        .column {
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+            .project-title {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .project-title {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -77,22 +147,21 @@
                                 For this project, my team and I developed a machine learning model to extract balanced summaries from politically biased news articles. The model utilizes Convolutional Neural Network (CNN) for classification and Transformer Pegasus for text summarization, trained on PyTorch framework in Google Colab.
                             </p>
                             <div class="image-gallery">
-                                <img src="/images/poster.jpg" alt="Project Poster" height="450",width="450", center>
-
-                                <img src="/images/ai-workshop.jpg" alt="AI Workshop" height="450",width="450">
+                                <img src="/images/poster.jpg" alt="Project Poster">
+                                <img src="/images/ai-workshop.jpg" alt="AI Workshop">
                             </div>
                         </div>
                         <div class="divider"></div> <!-- Divider -->
-
-                        <p>
-                            <span class="project-title">Project: Creating Database to Store Music Records</span><br>
-                            <span class="technologies">Technologies: SQL, Google Colab</span><br>
-                            <strong>GitHub Repo:</strong> <a class="github-link" href="https://github.com/yulijasso/album-database.git"><i class="fab fa-github"></i></a>
-                        </p>
-                        <p>
-                            For this project, I created a database from scratch to store music records, which highlights my database management and data manipulation skills.
-                        </p>
-
+                        <div class="text">
+                            <p>
+                                <span class="project-title">Project: Creating Database to Store Music Records</span><br>
+                                <span class="technologies">Technologies: SQL, Google Colab</span><br>
+                                <strong>GitHub Repo:</strong> <a class="github-link" href="https://github.com/yulijasso/album-database.git"><i class="fab fa-github"></i></a>
+                            </p>
+                            <p>
+                                For this project, I created a database from scratch to store music records, which highlights my database management and data manipulation skills.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
