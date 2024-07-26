@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code';
+}
+
+
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #faeee7;
+
+}
+
+
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: #e2216a;
+}
+
+.home {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.home h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.home span {
+    color: #e2216a;
+}
+
+.home p {
+    color: #555;
+    line-height: 22px;
+}
+
+.home a {
+    background: #e2216a;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.images {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    max-width: 100%; /* Set the maximum width of the image to fit within its container */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .yuliana {
+    left: 45%;
+}
+
+.social {
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a {
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+.social a:hover {
+    color: #e2216a;
+}
+
+.contact a {
+    background: #e2216a;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 10%;
+    background: lightpink;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contact p {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.all {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e2216a;
+    border-radius: 0px;
+}
+
+.contact span {
+    background: #e2216a;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.aboutsection h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 40px;
+}
+
+.aboutsection p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: 'Fira Code';
+}
+
+.home p {
+    font-family: 'Fira Code';
+    font-size: 30px;
+    font-style: bold;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.aboutsection ul {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: 'Fira Code';
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: square;
+}
+
+.projects h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 40px;
+}
+
+.projects p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: 'Fira Code';
+}
+
+.projects {
+    text-align: left; /* Center align the content */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.image1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.image2 {
+    position: absolute;
+    bottom: 0;
+    center: 0;
+}
+
+
+.image3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+proj-1 {
+    display: block;
+    margin: 8px;
+}
+
+
+
+
+
+.image-gallery {
+    display: flex; /* Use flexbox for easy alignment */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Add some space below each image gallery */
+}
+
+
+
